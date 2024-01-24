@@ -58,5 +58,8 @@ Vue2 对于 typescript 的支持非常有限
  
  npm i -g @vue/cli
  vue create xxxxx
+
+ # jsx 
+ (babel-plugin-jsx)[https://github.com/vuejs/babel-plugin-jsx]
  
  
