@@ -1,5 +1,16 @@
-https://v3.vuejs.org
-https://github.com/vuejs/create-vue
+(vue3 官网)[https://v3.vuejs.org]
+(创建Vue项目)[https://github.com/vuejs/create-vue]
+(RFCS)[https://github.com/vuejs/rfcs]
+(vue cli 脚手架)[https://cli.vuejs.org/#getting-started]
+```
+ npm i -g @vue/cli
+ vue create xxxxx
+
+ 或者
+npm create vue@latest
+## Or, if you need to support IE11, you can create a Vue 2 project with: 
+npm create vue@legacy
+```
 
 css: Bootstrap | Tailwind css  
 
@@ -56,8 +67,7 @@ Vue2 对于 typescript 的支持非常有限
  "vetur.experimental.templateInterpolationService": true
  ```
  
- npm i -g @vue/cli
- vue create xxxxx
+
 
  # jsx 
  (babel-plugin-jsx)[https://github.com/vuejs/babel-plugin-jsx]
