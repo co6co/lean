@@ -6,7 +6,7 @@ https://www.softether-download.com/files/softether/
 tar -zxvf softether-vpnclient-v4.32-9731-beta-2020.01.01-linux-x64-64bit.tar.gz
 cd vpnclient
 make
-./vpnclient start
+sudo ./vpnclient start
 ./vpncmd  # ## lang.config
 >1 2 3
 >2
@@ -18,5 +18,6 @@ AccountPasswordSet #设置连接时的密码
 AccountList #查看连接列表
 AccountConnect #连接
 AccountDetailSet    # 网络慢可进行详细配置
+nicCreate     #创建虚拟网卡
 ```
 
