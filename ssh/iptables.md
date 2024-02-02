@@ -44,14 +44,17 @@ net----此规则表拥有prerouting和postrouting两个规则链， 主要功能
 mangle--此规则表拥有prerouting、FORWARD、postrouting三个规则链，除了进行网址转译工作会改写封包外，在某些特殊应用可能也必须去改写封包(ITL、TOS)或者是设定MARK(将封包作记号，以进行后续的过滤)这时就必须将这些工作定义在mangles规则表中
 
 # 常用命令：
+```
 -A 追加规则-->iptables -A INPUT
 -D 删除规则-->iptables -D INPUT 1(编号)
 -R 修改规则-->iptables -R INPUT 1 -s 192.168.12.0 -j DROP 取代现行规则，顺序不变(1是位置)
 -I 插入规则-->iptables -I INPUT 1 --dport 80 -j ACCEPT 插入一条规则，原本位置上的规则将会往后移动一个顺位
 -L 查看规则-->iptables -L INPUT 列出规则链中的所有规则
 -N 新的规则-->iptables -N allowed 定义新的规则
+```
 
 # 通用参数：
+```
 -p 协议  例：iptables -A INPUT -p tcp
 -s源地址 例：iptables -A INPUT -s 192.168.1.1
 -d目的地址 例：iptables -A INPUT -d 192.168.12.1
@@ -59,8 +62,9 @@ mangle--此规则表拥有prerouting、FORWARD、postrouting三个规则链，�
 -dport目的端口 例:iptables -A INPUT -p tcp --dport 22
 -i指定入口网卡 例:iptables -A INPUT -i eth0
 -o指定出口网卡 例:iptables -A FORWARD -o eth0
-
+```
 # -j 指定要进行的处理动作
+```
 常用的ACTION：
 DROP：丢弃
 REJECT：明示拒绝
@@ -80,6 +84,7 @@ MASQUERADE：源地址伪装
 REDIRECT：重定向：主要用于实现端口重定向
 MARK：打防火墙标记的
 RETURN：返回 在自定义链执行完毕后使用返回，来返回原规则链。
+```
 
 链    (chain)
 每个表都有自己的一组内置链，可以对链进行自定义，这样就可以建立一组规则，
