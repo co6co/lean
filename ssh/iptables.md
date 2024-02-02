@@ -86,6 +86,13 @@ MARK：打防火墙标记的
 RETURN：返回 在自定义链执行完毕后使用返回，来返回原规则链。
 ```
 
+# save
+```
+service iptables save
+//or
+iptables-save
+```
+
 链    (chain)
 每个表都有自己的一组内置链，可以对链进行自定义，这样就可以建立一组规则，
 filter表中的input、output和forward链
