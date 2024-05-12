@@ -1,5 +1,6 @@
-# 安装 tsc
-编译器
+# 创建vite 项目
 ```
-npm instasll -g typescript
+npm create vite
+npm i
+
 ```
