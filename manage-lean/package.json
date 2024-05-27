@@ -1,0 +1,23 @@
+{
+  "name": "manage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:web1": "cd packages/web1 & pnpm dev",
+    "dev:web2": "pnpm -C packages/web1 & pnpm dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^3.4.27"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4",
+    "less": "^4.2.0",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11"
+  }
+}
