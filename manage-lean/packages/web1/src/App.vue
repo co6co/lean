@@ -2,6 +2,12 @@
 import HelloWorld from './components/HelloWorld.vue'
 //import {add} from '../../utils'
 import {add} from '@manage/utils'
+import type { App, Plugin } from '@vue/runtime-core'
+
+const ttt=(a?:App,b?:Plugin)=>{
+  console.info(a,b)
+}
+ttt()
 console.info(add(1,2))
 </script>
 
@@ -17,7 +23,7 @@ console.info(add(1,2))
   <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
+<style>
 @import './assets/style/index.less'
 @import '@manage/utils/style/index.less' 
 </style>
