@@ -1,0 +1,10 @@
+@import '../helpers/variables'
+
+.navbar{
+    display:  flex;
+    justify-content:space-between;
+    .logon{width: 100px ;width: 60px;}
+.navbar-items{display: flex;  justify-content:space-between;
+width: 70%;}
+a{color: $mainColor;}
+}
