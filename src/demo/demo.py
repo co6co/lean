@@ -11,7 +11,7 @@ from savemodle import model as s
 model = tf.keras.Sequential([keras.layers.Dense(units=1, input_shape=[1])])
  #设置损失函数和优化模型
 model.compile(optimizer='sgd', loss='mean_squared_error')
-path="./demo.pickle"
+path="./tmp/demo.pickle.data"
 
 # 训练
 def training(m): 
