@@ -23,9 +23,10 @@ git branch git-lean v0
 git checkout -b vite-ssr-vue3 v0 #从 v0 中创建分支并切换到新建的分支
 git push origin --delete base # 删除远程分支
 
-git branch --set-upstream-to=origin/<branch> <localBranch>   // --set-upstream（或简写为 -u）
+git branch --set-upstream-to=origin/<branch> <localBranch>  //--set-upstream（或简写为 -u）关联本地分支和远程分支>
 
-git branch --set-upstream-to=origin/<branch> <localBranch>  //关联本地分支和远程分支
+>设置完提示：Branch 'localBranch' set up to track remote branch 'branch' from 'origin'.
+
 ```
 
 # pull
@@ -42,11 +43,32 @@ git push --set-upstream origin localBranch # 分支 提交是需要跟踪分支 
 #创建远程分支
 git push origin master:remoteBranch //创建分支、提交分支
 ```
+# 本地分支名与上游分支名称不同
+
+```
+
+# 提示
+fatal: The upstream branch of your current branch does not match
+the name of your current branch.  To push to the upstream branch
+on the remote, use
+当前分支的上游分支与当前分支的名称不匹配。 要推送到远程的上游分支，请使用
+
+> git push origin HEAD:tf-demo
+
+To push to the branch of the same name on the remote, use
+要推送到远端的同名分支，请使用
+
+> git push origin HEAD
+
+To choose either option permanently, see push.default in 'git help config'.
+永久选择其中一个选项，请参阅 “git help config ”中的 push.default
+
+```
 
 
 
 # 权限
-``
+```
 >>Please make sure you have the correct access rights and the repository exist
 >ssh -T git@github.com   //-T 不分配伪终端
 
