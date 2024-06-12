@@ -26,6 +26,8 @@ git push origin --delete base # 删除远程分支
 git branch --set-upstream-to=origin/<branch> <localBranch>  //--set-upstream（或简写为 -u）关联本地分支和远程分支>
 
 >设置完提示：Branch 'localBranch' set up to track remote branch 'branch' from 'origin'.
+git branch -vv  //查看跟踪的分支
+
 
 ```
 
