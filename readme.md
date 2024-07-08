@@ -75,3 +75,12 @@ To choose either option permanently, see push.default in 'git help config'.
 >ssh -T git@github.com   //-T 不分配伪终端
 
 ```
+
+# 将存在的代码推送到远程仓库
+```
+git init
+git add .
+git commit -m 'init'
+git remote add origin git@github.com:co6co/xdwx.git
+git push --set-upstream origin master
+```
