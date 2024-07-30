@@ -15,7 +15,12 @@ git remote show <name>：显示指定远程仓库的详细信息，包括URL和�
 
 # tag
 ```
- git tag -a v0 85fc7e7
+ git tag -a v0 85fc7e7   #给指定的某个提交打标签
+ git tag -a tagName -m "my tag"  #创建一个带备注的tag，备注信息由-m指定
+ git tag # 列出所有tag
+
+ git push origin v1.0 #将tag v1.0 推送到远程服务器
+ git push origin --tags #将所有tag推送到远程服务器
  ```
 # branch
 ```
